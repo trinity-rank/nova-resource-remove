@@ -18,6 +18,8 @@ class NovaResourceRemove extends Action
  
     protected $data;
 
+    public $name = 'Remove';
+
     public function __construct($data)
     {
         $this->data = $data;
@@ -83,6 +85,6 @@ class NovaResourceRemove extends Action
 
     public function actionClass()
     {
-        return 'h-8 bg-gray-400 text-white';
+        return 'h-8 text-red-400 shadow-none';
     }
 }
